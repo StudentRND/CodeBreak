@@ -2,9 +2,9 @@
 %html
   %head
     -if block('title')
-      %title= "#{block('title')} ~ CodeBreak"
+      %title= "#{block('title')} ~ CodeLabs"
     -else
-      %title= "CodeBreak"
+      %title= "CodeLabs"
 
     %link(rel="stylesheet" href="/assets/css/style.css?v=#{version}")
     %link(rel="icon" type="image/png" href="/assets/img/favicon.png?v=#{version}")
@@ -15,16 +15,14 @@
         .wrap-inner
           %section.site-title
             %h1
-              %a(href="/")= "CodeBreak"
-            %a(href="https://srnd.org/") by StudentRND
+              %a(href="/")= "CodeLabs"
+            %a(href="https://srnd.org/") by srnd.org
           %nav
             %ul
               %li
                 %a(href="/")= "Info"
               %li
                 %a(href="/register")= "Register"
-              %li
-                %a(href="/mentor")= "Mentor"
 
     .hero
       .wrap
@@ -38,7 +36,7 @@
       .wrap
         .wrap-inner
           .copyright
-            &copy; 2016-#{ null|date('Y') } <a href="https://srnd.org/">StudentRND</a>.
+            &copy; 2016-#{ null|date('Y') } <a href="https://srnd.org/">srnd.org</a>.
           .contact
             %a(href="mailto:contact@srnd.org") contact@srnd.org<br />
 
